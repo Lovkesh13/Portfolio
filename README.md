@@ -1,8 +1,49 @@
-# React + Vite
+# 💼 Personal Portfolio – Lovkesh Barowalia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive developer portfolio website built with **React.js**, **Three.js**, and **Tailwind CSS**. It showcases my skills, 3D visualizations, and development projects as a pre-final year B.Tech student at NIT Jalandhar.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+
+👉 [https://your-portfolio.vercel.app](https://your-portfolio.vercel.app)
+*(Replace with your actual Vercel link)*
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, Vite
+- **3D Graphics:** Three.js, @react-three/fiber, @react-three/drei
+- **Animations:** Framer Motion
+- **UI Effects:** react-parallax-tilt
+- **Deployment:** Vercel
+
+---
+
+## 📁 Features
+
+- Modern, responsive portfolio layout
+- Smooth animations using Framer Motion
+- Interactive 3D models with Three.js
+- Tilt hover effects on cards (react-parallax-tilt)
+- Dynamic project showcase with GitHub links
+
+---
+
+## 🎮 3D Integration
+
+This portfolio includes 3D models rendered using **Three.js** via the React-friendly `@react-three/fiber` library, allowing interactive and lightweight 3D scenes on the web.
+
+---
+
+## 📷 Screenshots
+
+![Screenshot](./Preview.png) 
+
+---
+
+
+## 📄 License
+
+This project is open source under the [MIT License](LICENSE).
