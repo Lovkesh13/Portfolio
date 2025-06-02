@@ -6,8 +6,7 @@ An interactive developer portfolio website built with **React.js**, **Three.js**
 
 ## 🚀 Live Demo
 
-👉 [https://your-portfolio.vercel.app](https://your-portfolio.vercel.app)
-*(Replace with your actual Vercel link)*
+👉 [https://portfolio-one-gray-86.vercel.app/](https://portfolio-one-gray-86.vercel.app/)
 
 ---
 
