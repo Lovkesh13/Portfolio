@@ -18,11 +18,11 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import cpp from './tech/cpp.png'
 
-import cdao from "./company/cdao.jpg";
 import loading from "./company/loading.jpg";
 
 import sudoku from './sudoku.png'
 import imagify from './imagify.png'
+import bel from './company/BEL.webp'
 
 export {
   logo,
@@ -43,7 +43,7 @@ export {
   reactjs,
   tailwind,
   threejs,
-  cdao,
+  bel,
   loading,
   sudoku,
   imagify,

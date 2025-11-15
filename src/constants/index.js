@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   html,
   css,
@@ -12,7 +8,7 @@ import {
   nodejs,
   mongodb,
   git,
-  cdao,
+  bel,
   loading,
   sudoku,
   imagify,
@@ -32,25 +28,6 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
-];
-
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "Software Engineer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  // {
-  //   title: "Content Creator",
-  //   icon: creator,
-  // },
 ];
 
 const technologies = [
@@ -98,16 +75,14 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Web Development Team Member",
-    company_name: "CDAO Club",
-    icon: cdao,
+    title: "AI/ML Intern",
+    company_name: "Bharat Electronics Limited",
+    icon: bel,
     iconBg: "white",
     date: "Current",
     points: [
-      "Contributing to club projects using React.js and modern web technologies",
-      "Collaborating with fellow club members on web development initiatives",
-      "Learning and implementing best practices in frontend development",
-      "Participating in club meetings and technical discussions"
+      "Engineered a high-performance acoustic surveillance system by fine-tuning deep learning models (YAMNet, AST), successfully classifying security-critical events like gunfire, explosion.",
+      " Managed the end-to-end machine learning workflow, from curating and preprocessing large audiodatasets (UrbanSound8K, AudioSet) with advanced augmentation to implementing and evaluating models."
     ],
   },
   {
@@ -171,4 +146,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { technologies, experiences, projects };
