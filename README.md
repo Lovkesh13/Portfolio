@@ -41,8 +41,3 @@ This portfolio includes 3D models rendered using **Three.js** via the React-frie
 ![Screenshot](./Preview.png) 
 
 ---
-
-
-## 📄 License
-
-This project is open source under the [MIT License](LICENSE).
