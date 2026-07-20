@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Preload, useGLTF, Float, useAnimations } from '@react-three/drei';
+import { Preload, useGLTF, Float, useAnimations, OrbitControls } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Spaceman = ({ scale, position }) => {
@@ -43,24 +43,12 @@ const Spaceman = ({ scale, position }) => {
   );
 };
 
-const SpacemanCanvas = ({ scrollContainer }) => {
+const SpacemanCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [rotationX, setRotationX] = useState(0);
-  const [rotationY, setRotationY] = useState(0);
   const [scale, setScale] = useState([2.2, 2.2, 2.2]);
   const [position, setPosition] = useState([1, -15, -10]); 
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (scrollContainer?.current) {
-        const scrollTop = scrollContainer.current.scrollTop;
-        const rotationXValue = scrollTop * -0.0004;
-        const rotationYValue = scrollTop * -0.0005;
-        setRotationX(rotationXValue);
-        setRotationY(rotationYValue);
-      }
-    };
-
     const handleResize = () => {
       const width = window.innerWidth;
 
@@ -88,14 +76,12 @@ const SpacemanCanvas = ({ scrollContainer }) => {
     };
 
     handleResize();
-    window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
-  }, [scrollContainer]);
+  }, []);
 
   return (
     <Canvas
@@ -122,10 +108,19 @@ const SpacemanCanvas = ({ scrollContainer }) => {
         
         <Spaceman
           isMobile={isMobile}
-          rotationX={rotationX}
-          rotationY={rotationY}
           scale={scale}
           position={position}
+        />
+
+        <OrbitControls
+          enableZoom={false}
+          enablePan={false}
+          enableDamping
+          dampingFactor={0.08}
+          rotateSpeed={0.6}
+          minPolarAngle={Math.PI / 2.6}
+          maxPolarAngle={Math.PI / 1.8}
+          target={[0, 0.5, 0]}
         />
       </Suspense>
       

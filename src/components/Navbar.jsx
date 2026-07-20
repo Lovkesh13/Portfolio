@@ -45,7 +45,7 @@ const Navbar = () => {
             Lovkesh &nbsp;<span className="sm:block hidden">| Lovkesh Barowalia</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row items-center gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -61,6 +61,14 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#f47841] hover:bg-[#e36b37] transition-colors duration-300 text-white text-[16px] font-bold px-5 py-2 rounded-lg"
+          >
+            Resume
+          </a>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -94,6 +102,17 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#f47841] text-white font-bold text-[16px] px-4 py-2 rounded-lg"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>

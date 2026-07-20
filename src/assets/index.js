@@ -17,11 +17,13 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import cpp from './tech/cpp.png'
+import docker from './tech/docker.png'
 
 import loading from "./company/loading.jpg";
 
 import sudoku from './sudoku.png'
 import imagify from './imagify.png'
+import seatlock from './seatlock.png'
 import bel from './company/BEL.webp'
 
 export {
@@ -35,6 +37,7 @@ export {
   close,
   css,
   cpp,
+  docker,
   git,
   html,
   javascript,
@@ -47,4 +50,5 @@ export {
   loading,
   sudoku,
   imagify,
+  seatlock,
 };

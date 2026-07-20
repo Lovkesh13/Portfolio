@@ -7,11 +7,13 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  docker,
   git,
   bel,
   loading,
   sudoku,
   imagify,
+  seatlock,
   threejs,
 } from "../assets";
 
@@ -68,6 +70,10 @@ const technologies = [
     icon: threejs,
   },
   {
+    name: "Docker",
+    icon: docker,
+  },
+  {
     name: "git",
     icon: git,
   },
@@ -79,10 +85,11 @@ const experiences = [
     company_name: "Bharat Electronics Limited",
     icon: bel,
     iconBg: "white",
-    date: "Current",
+    date: "June 2025 - August 2025",
     points: [
-      "Engineered a high-performance acoustic surveillance system by fine-tuning deep learning models (YAMNet, AST), successfully classifying security-critical events like gunfire, explosion.",
-      " Managed the end-to-end machine learning workflow, from curating and preprocessing large audiodatasets (UrbanSound8K, AudioSet) with advanced augmentation to implementing and evaluating models."
+      "Engineered an end-to-end acoustic event detection system for defence surveillance, curating a composite dataset of 8,732+ labeled clips across 10 sound classes from UrbanSound8K and AudioSet to classify 3 security-critical event types (vehicles, aircraft, gunfire).",
+      "Implemented an ML pipeline with preprocessing (log-Mel spectrograms) and augmentation (Mixup, SpecAugment), improving model robustness and generalization on noisy real-world audio.",
+      "Applied transfer learning strategies, utilizing YAMNet as a feature extractor and fine-tuning AST, achieving about 93% classification accuracy with high recall for critical events."
     ],
   },
   {
@@ -100,6 +107,30 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "SeatLock",
+    description: "Concurrency-safe seat-booking backend using PostgreSQL row-level locking to eliminate race conditions. Verified 0 double-bookings across 10,000 simultaneous requests at ~590 bookings/sec.",
+    tags: [
+      {
+        name: "node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "concurrency",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: seatlock,
+    source_code_link: "https://github.com/Lovkesh13/SeatLock",
+  },
   {
     name: "Imagify",
     description: "AI-Powered Text to Image Generator that brings ideas to life. Free tool that transforms text descriptions into stunning visuals and unique imagery.",
@@ -141,7 +172,7 @@ const projects = [
         color: "blue-text-gradient"
       }
     ],
-    image: sudoku, // Add appropriate image path
+    image: sudoku,
     source_code_link: "https://github.com/Lovkesh13/Sudoku_solver",
   },
 ];
